@@ -1,0 +1,21 @@
+/* Add Global Rules */
+:root{
+    /* Colors */
+    --primary-color:#141414;
+    --secondary-color:#1f1f1f;
+    --last-color:#333333;
+    --green-color:#c4f82A;
+    --white-color:#ffffff;
+
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* End Global Rules */
