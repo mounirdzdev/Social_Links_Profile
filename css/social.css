@@ -1,12 +1,11 @@
 /* Add Global Rules */
-:root{
-    /* Colors */
-    --primary-color:#141414;
-    --secondary-color:#1f1f1f;
-    --last-color:#333333;
-    --green-color:#c4f82A;
-    --white-color:#ffffff;
-
+:root {
+  /* Colors */
+  --primary-color: #141414;
+  --secondary-color: #1f1f1f;
+  --last-color: #333333;
+  --green-color: #c4f82a;
+  --white-color: #ffffff;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -16,6 +15,117 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+.container {
+  color: azure;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--secondary-color); */
+}
+
+/* Mobile */
+@media (min-width: 375px) {
+  .container {
+    width: 360px;
+  }
+  .card {
+    width: 327px;
+    height: 579px;
+  }
+}
+
+/* Tablette */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 /* End Global Rules */
+/* Start Card */
+.container .card {
+    width: 384px;
+    height: 611px;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.image{
+   
+   
+}
+.image img{
+    border-radius: 50%;
+    width: 88px;
+}
+.card .text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+    
+}
+.text h3{
+    margin: 0;
+    font-weight:600;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0;
+    
+}
+.text p{
+    color: var(--green-color);
+   margin: 0;
+}
+.card p{
+    font-size: 14px;
+    line-height: 150%;
+}
+.card .description{
+    margin:24px 0 0 0;
+
+}
+.button {
+  width: 304px;
+  height: 289px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.button button {
+  height: 45px;
+  border-radius: 8px;
+  background-color: var(--last-color);
+  color: var(--white-color);
+  border: none;
+  padding: 12px;
+  transition: 0.3;
+}
+.button button:hover {
+   
+    background-color: var(--green-color);
+    color: var(--primary-color);
+   
+  }
+
+/* End Card */
