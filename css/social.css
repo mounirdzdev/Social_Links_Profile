@@ -47,6 +47,7 @@ body {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+    padding: 40px;
   }
 }
 
@@ -60,49 +61,65 @@ body {
 /* End Global Rules */
 /* Start Card */
 .container .card {
-    width: 384px;
-    height: 611px;
-    background-color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
+  width: 384px;
+  height: 611px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 40px;
 }
-.image{
-   
-   
+@media (max-width: 375px) {
+  .container .card {
+    width: 327px;
+    height: 579px;
+  }
 }
-.image img{
-    border-radius: 50%;
-    width: 88px;
+
+.image img {
+  border-radius: 50%;
+  width: 88px;
 }
-.card .text{
+.card .text {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-top: 24px;
-    
+    width: 304px;
 }
-.text h3{
-    margin: 0;
-    font-weight:600;
-    font-size: 24px;
-    line-height: 150%;
-    letter-spacing: 0;
-    
-}
-.text p{
-    color: var(--green-color);
-   margin: 0;
-}
-.card p{
-    font-size: 14px;
-    line-height: 150%;
-}
-.card .description{
-    margin:24px 0 0 0;
+@media (max-width: 375px) {
+    .card .text {
+        
+        width: 279px;
+    }
+  }
 
+.text h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0;
 }
+.text p {
+  color: var(--green-color);
+  margin: 0;
+}
+.card p {
+  font-size: 14px;
+  line-height: 150%;
+}
+.card .description {
+  margin: 24px 0 0 0;
+  width: 304px;
+}
+@media (max-width: 375px) {
+    .card .description {
+       
+        width: 279px;
+      }
+  }
 .button {
   width: 304px;
   height: 289px;
@@ -112,6 +129,12 @@ body {
   flex-wrap: wrap;
   margin-top: 24px;
 }
+@media (max-width: 375px) {
+    .button{
+       
+        width: 279px;
+      }
+  }
 .button button {
   height: 45px;
   border-radius: 8px;
@@ -122,10 +145,8 @@ body {
   transition: 0.3;
 }
 .button button:hover {
-   
-    background-color: var(--green-color);
-    color: var(--primary-color);
-   
-  }
+  background-color: var(--green-color);
+  color: var(--primary-color);
+}
 
 /* End Card */
